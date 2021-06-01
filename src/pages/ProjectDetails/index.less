@@ -1,0 +1,64 @@
+@import '~antd/lib/style/themes/default.less';
+@import "../../utils/utils.less";
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.taskContent {
+  margin-top: 20px;
+}
+
+.doc {
+  display: flex;
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .docSize{
+      color:#909090;
+      font-size: 12px;
+    }
+  }
+}
+
+.step{
+  padding: 6px 22px 6px 8px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.noStarted{
+  background: #BFBFBF;
+  background: linear-gradient(135deg, transparent 0, #BFBFBF 0) top left,
+  linear-gradient(45deg, transparent 0, #BFBFBF 0) bottom left,
+  linear-gradient(-45deg, transparent 12px, #BFBFBF 0) bottom right,
+  linear-gradient(-136deg, transparent 12px, #BFBFBF 0) top right;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+.going{
+  background:#FA8C16;
+  background: linear-gradient(135deg, transparent 0,#FA8C16 0) top left,
+  linear-gradient(45deg, transparent 0, #FA8C16 0) bottom left,
+  linear-gradient(-45deg, transparent 12px, #FA8C16 0) bottom right,
+  linear-gradient(-136deg, transparent 12px, #FA8C16 0) top right;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+.complete{
+  background: #87D068;
+  background: linear-gradient(135deg, transparent 0, #87D068 0) top left,
+  linear-gradient(45deg, transparent 0, #87D068 0) bottom left,
+  linear-gradient(-45deg, transparent 12px, #87D068 0) bottom right,
+  linear-gradient(-136deg, transparent 12px, #87D068 0) top right;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+}
+
+

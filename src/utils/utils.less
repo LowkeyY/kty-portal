@@ -1,0 +1,23 @@
+// mixins for clearfix
+// ------------------------
+@import '~antd/lib/style/themes/default.less';
+.clearfix() {
+  zoom: 1;
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+  &::after {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+}
+
+.tips {
+  padding-left: 5px;
+  font-size: 16px;
+  border-left: 4px solid @primary-color;
+}

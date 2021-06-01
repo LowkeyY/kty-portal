@@ -1,0 +1,48 @@
+
+.tag-xs {
+  font-size: 12px;
+}
+
+.tag-normal {
+  font-size: 14px;
+}
+
+.outer {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 120px;
+  height: 1.8em;
+  margin: 0;
+  margin-right: 8px;
+  padding: 0.1em 0.4em;
+  vertical-align: middle;
+  color: #FFF;
+  font-variant: tabular-nums;
+  line-height: 1.8em;
+  white-space: nowrap;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  background: #efefef;
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: transparent;
+    transition: width .5s linear;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin: auto auto;
+    text-align: center;
+  }
+}
+
